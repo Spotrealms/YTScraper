@@ -1,6 +1,15 @@
 # YTScraper
 
-A simple YouTube video scraper which collects video info using the video's page. 
+A simple YouTube video scraper which collects video info using the video's page.
+
+<center>
+    <a href='https://ci.spotrealms.com/view/1st-party/job/YTScraper/'><img alt="Jenkins Repository" src="https://ci.spotrealms.com/view/1st-party/job/YTScraper/badge/icon?subject=Jenkins Build"></a>
+    <a href="https://github.com/Spotrealms/YTScraper/network"><img alt="GitHub Forks" src="https://badgen.net/github/forks/Spotrealms/YTScraper"></a>
+    <a href="https://github.com/Spotrealms/YTScraper/stargazers"><img alt="GitHub Stars" src="https://badgen.net/github/stars/Spotrealms/YTScraper"></a>
+    <a href="https://github.com/Spotrealms/YTScraper/issues"><img alt="GitHub Issues" src="https://badgen.net/github/issues/Spotrealms/YTScraper"></a>
+    <img alt="GitHub last commit" src="https://badgen.net/github/last-commit/Spotrealms/YTScraper">
+    <img alt="GitHub" src="https://badgen.net/github/license/Spotrealms/YTScraper">
+</center>
 
 ### Features
 
@@ -29,6 +38,8 @@ A simple YouTube video scraper which collects video info using the video's page.
 - Video Keywords
 
 ### Getting Started
+
+Note: For the fields marked with `VERSION`, replace that with the current version of the project, which can be found [here](VERSION).
 
 #### Maven:
 
@@ -79,19 +90,19 @@ dependencies {
 
 ```java
 new YTScraper(uris).load(new VideoResultHandler(){
-	@Override
-	public void videoLoaded(YTVideo video){
-		System.out.println("Title: " + video.getTitle());
-	}
+    @Override
+    public void videoLoaded(YTVideo video){
+        System.out.println("Title: " + video.getTitle());
+    }
 
-	@Override
-	public void loadFailed(InvalidVideoException e){
-		e.printStackTrace();
-	}
+    @Override
+    public void loadFailed(InvalidVideoException e){
+        e.printStackTrace();
+    }
 });
 ```
 
-For a more complete example, see [Main](src/test/Main).
+For a more complete example, see [Main](src/test/Main.java).
 
 ### License
 
