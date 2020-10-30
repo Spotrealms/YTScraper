@@ -3,6 +3,7 @@ package test;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.volcanicarts.ytscraper.api.entities.YTScraper;
@@ -15,7 +16,7 @@ public class Main {
 	public static void main(String[] args) throws URISyntaxException {
 		// A simple test case for using the YTScraper and YTVideo classes
 		URI uri = new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-		List<URI> uris = new ArrayList<URI>();
+		List<URI> uris = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			uris.add(uri);
 		}
@@ -28,6 +29,9 @@ public class Main {
 				System.out.println("Duration: " + video.getDurationFormatted());
 				System.out.println("Category: " + video.getCategory());
 				System.out.println("Uploaded: " + video.getUploadFormatted());
+				System.out.println("Uploader: " + video.getUploader());
+				System.out.println("Uploader (by ID): " + video.getUploaderID());
+				System.out.println("Keywords: " + Arrays.toString(video.getKeywords()));
 			}
 
 			@Override

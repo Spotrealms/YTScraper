@@ -50,4 +50,18 @@ public interface YTVideo {
 	 */
 	VideoCategory getCategory();
 
+	/**
+	 * @return The uploader by name
+	 */
+	String getUploader();
+
+	/**
+	 * @return The uploader by ID (classic ID or by name)
+	 */
+	String getUploaderID();
+
+	/**
+	 * @return A list of the keywords for the video
+	 */
+	String[] getKeywords();
 }

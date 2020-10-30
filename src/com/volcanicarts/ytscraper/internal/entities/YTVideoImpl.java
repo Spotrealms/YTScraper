@@ -17,6 +17,9 @@ public class YTVideoImpl implements YTVideo {
 	private long duration;
 	private long upload;
 	private VideoCategory category;
+	private String uploader;
+	private String uploaderID;
+	private String[] keywords;
 	
 	public YTVideoImpl setID(String ID) {
 		this.ID = ID;
@@ -40,6 +43,21 @@ public class YTVideoImpl implements YTVideo {
 	
 	public YTVideoImpl setCategory(VideoCategory category) {
 		this.category = category;
+		return this;
+	}
+
+	public YTVideoImpl setUploader(String uploader) {
+		this.uploader = uploader;
+		return this;
+	}
+
+	public YTVideoImpl setUploaderID(String uploaderID) {
+		this.uploaderID = uploaderID;
+		return this;
+	}
+
+	public YTVideoImpl setKeywords(String[] keywords) {
+		this.keywords = keywords;
 		return this;
 	}
 
@@ -83,4 +101,18 @@ public class YTVideoImpl implements YTVideo {
 		return category;
 	}
 
+	@Override
+	public String getUploader(){
+		return uploader;
+	}
+
+	@Override
+	public String getUploaderID(){
+		return uploaderID;
+	}
+
+	@Override
+	public String[] getKeywords(){
+		return keywords;
+	}
 }
