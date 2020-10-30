@@ -86,7 +86,7 @@ public class Worker {
 			return null;
 		}
 		video.setUpload(uploaded);
-		if (playerMFR.has("category")) video.setCategory(VideoCategory.valueOf(playerMFR.getString("category")));
+		if (playerMFR.has("category")) video.setCategory(VideoCategory.valueOfByName(playerMFR.getString("category")));
 		return video;
 	}
 

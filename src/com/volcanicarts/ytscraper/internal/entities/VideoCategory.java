@@ -62,4 +62,16 @@ public enum VideoCategory {
 		return ID;
 	}
 
+	/**
+	 * Retrieves a video category object by name.
+	 * @param name The category name
+	 * @return An enum instance corresponding to the input name
+	 */
+	public static VideoCategory valueOfByName(String name){
+		for(VideoCategory type : VideoCategory.class.getEnumConstants()){
+
+			if(type.actualName.equals(name)) return type;
+		}
+		throw new IllegalArgumentException("VideoCategory not found");
+	}
 }
