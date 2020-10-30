@@ -2,14 +2,12 @@
 
 A simple YouTube video scraper which collects video info using the video's page.
 
-<center>
-    <a href='https://ci.spotrealms.com/view/1st-party/job/YTScraper/'><img alt="Jenkins Repository" src="https://ci.spotrealms.com/view/1st-party/job/YTScraper/badge/icon?subject=Jenkins Build"></a>
-    <a href="https://github.com/Spotrealms/YTScraper/network"><img alt="GitHub Forks" src="https://badgen.net/github/forks/Spotrealms/YTScraper"></a>
-    <a href="https://github.com/Spotrealms/YTScraper/stargazers"><img alt="GitHub Stars" src="https://badgen.net/github/stars/Spotrealms/YTScraper"></a>
-    <a href="https://github.com/Spotrealms/YTScraper/issues"><img alt="GitHub Issues" src="https://badgen.net/github/issues/Spotrealms/YTScraper"></a>
-    <img alt="GitHub last commit" src="https://badgen.net/github/last-commit/Spotrealms/YTScraper">
-    <img alt="GitHub" src="https://badgen.net/github/license/Spotrealms/YTScraper">
-</center>
+<a href="https://ci.spotrealms.com/view/1st-party/job/YTScraper/"><img alt="Jenkins Repository" src="https://ci.spotrealms.com/view/1st-party/job/YTScraper/badge/icon"></a>
+<a href="https://github.com/Spotrealms/YTScraper/network"><img alt="GitHub Forks" src="https://badgen.net/github/forks/Spotrealms/YTScraper"></a>
+<a href="https://github.com/Spotrealms/YTScraper/stargazers"><img alt="GitHub Stars" src="https://badgen.net/github/stars/Spotrealms/YTScraper"></a>
+<a href="https://github.com/Spotrealms/YTScraper/issues"><img alt="GitHub Issues" src="https://badgen.net/github/issues/Spotrealms/YTScraper"></a>
+<img alt="GitHub last commit" src="https://badgen.net/github/last-commit/Spotrealms/YTScraper">
+<img alt="GitHub" src="https://badgen.net/github/license/Spotrealms/YTScraper">
 
 ### Features
 
