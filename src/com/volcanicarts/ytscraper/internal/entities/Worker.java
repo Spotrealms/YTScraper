@@ -76,7 +76,7 @@ public class Worker {
 		video.setDuration(Long.parseLong(videoDetails.getString("lengthSeconds")) * 1000);
 		video.setUploader(videoDetails.getString("author"));
 		video.setUploaderID(videoDetails.getString("channelId"));
-		video.setKeywords(videoDetails.getJSONArray("keywords").toList().toArray(new String[0]));
+		if(videoDetails.has("keywords")) video.setKeywords(videoDetails.getJSONArray("keywords").toList().toArray(new String[0]));
 		long uploaded;
 		try {
 			uploaded = TimeUtil.parseUploaded(playerMFR.getString("publishDate"));
