@@ -19,25 +19,21 @@ public class YTScraper {
 	
 	private final int MAX_WORKERS = 5;
 	
-	private final List<URI> uris = new ArrayList<URI>();
-	private final List<Worker> workers = new ArrayList<Worker>();
+	private final List<URI> uris = new ArrayList<>();
+	private final List<Worker> workers = new ArrayList<>();
 	private VideoResultHandler handler;
 	
 	/**
 	 * Makes a new YTScraper from a list of URIs
-	 * @param videoID - The videoID of the video you want to get info on
-	 * @param handler - The callback class
-	 * @throws URISyntaxException
+	 * @param uris The list of video URIs to get info for
 	 */
-	public YTScraper(List<URI> uris) throws URISyntaxException {
+	public YTScraper(List<URI> uris){
 		this.uris.addAll(uris);
 	}
 	
 	/**
 	 * Makes a new YTScraper from a URI
-	 * @param URI - The URI of the video you want to get info on
-	 * @param handler - The callback class
-	 * @throws URISyntaxException
+	 * @param uri The URI of the video you want to get info on
 	 */
 	public YTScraper(URI uri) {
 		this.uris.add(uri);
